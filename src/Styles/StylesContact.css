@@ -1,0 +1,65 @@
+/* Base styles */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px; /* Adjust for desired width */
+  margin: 0 auto; /* Center the form horizontally */
+  margin-top: 5%;
+  font-size: 16px;
+  padding: 20px;
+  padding-right: 2.1%;
+  border: 1px solid #ddd; /* Optional light border */
+  border-radius: 5px; /* Rounded corners for a softer look */
+}
+
+/* Labels */
+label {
+  margin-bottom: 0.5rem; /* Add margin-bottom for spacing */
+  display: block; /* Ensures labels appear on their own line */
+  font-weight: bold; /* Emphasize labels for readability */
+  color: #333; /* Darker text for better contrast */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  height: 25px; /* Adjust height as needed */
+  padding: 7px;
+  outline: none;
+  border: 1px solid #ccc; /* Light border for better visibility */
+  border-radius: 5px;
+  font-family: inherit; /* Inherit font from the form */
+  font-size: 14px; /* Reduce font size for name and email */
+}
+
+textarea {
+  width: 100%;
+  height: 150px; /* Increase height for larger message input */
+  padding: 7px;
+  outline: none;
+  border: 1px solid #ccc; /* Light border for better visibility */
+  border-radius: 5px;
+  font-family: inherit; /* Inherit font from the form */
+  resize: vertical; /* Allow users to resize the textarea vertically */
+}
+
+/* Submit button */
+input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: #00d29b; /* Green background for the submit button */
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjust padding for better button size */
+  border-radius: 5px;
+  font-weight: bold; /* Emphasize button text */
+  transition: background-color 0.2s ease-in-out; /* Smooth background transition on hover */
+  justify-content: center;
+  margin-right: -3%;
+}
+
+input[type="submit"]:hover {
+  background-color: #00b881; /* Darker green on hover for visual feedback */
+}
